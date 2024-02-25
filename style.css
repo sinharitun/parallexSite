@@ -1,0 +1,104 @@
+*{
+   
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+ 
+}
+.wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+
+}
+
+.firstblock{
+    height: 100%;
+    width: 100;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+
+
+.back, .foreground{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+}
+.foreground{
+    height: 100vh;
+    width: auto;
+    transform: translateZ(-15px) scale(2);
+    
+    bottom: -10rem;
+    
+   
+}
+.back{
+    transform: translateZ(-40px) scale(5);
+    width: 250vh ;
+}
+
+h1{
+    color: azure;
+    position: absolute;
+    top: 10rem;
+    left: 50%;
+    font-size: 5rem;
+    text-shadow: 0px 0px 10px black;
+    transform: translateX(-50%);
+    letter-spacing: 10px;
+   
+}
+
+section{
+    background-color: rgb(45, 45, 45);
+    color: beige;
+    padding: 5rem 0;
+}
+.sec{
+    font-size: 4rem;
+    padding: 0 5rem;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+}
+.text{
+    font-size: 1.3rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+.bg{
+    width: 100%;
+    background-attachment: fixed;
+    height: 500px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+
+}
+.desc{
+   position: absolute;
+   background-color: beige;
+   padding: 0.5rem 2.5rem;
+   top: 50%;
+   left: 50%;
+   transform: translateX(-50%);
+   color: black;
+   font-weight: 600;
+   font-size: 3rem;
+}
+.bg1{
+    background-image: url(back.webp);
+}
+.bg2{
+    background-image: url(img3.avif) ;
+}
